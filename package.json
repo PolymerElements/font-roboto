@@ -17,10 +17,12 @@
   "license": "BSD-3-Clause",
   "homepage": "https://github.com/PolymerElements/font-roboto/",
   "devDependencies": {
-    "@polymer/gen-typescript-declarations": "^1.1.1",
-    "bower": "^1.8.0"
+    "@polymer/gen-typescript-declarations": "^1.2.2",
+    "bower": "^1.8.0",
+    "webmat": "^0.2.0"
   },
   "scripts": {
-    "update-types": "bower install && gen-typescript-declarations --deleteExisting --outDir ."
+    "update-types": "bower install && gen-typescript-declarations --deleteExisting --outDir .",
+    "format": "webmat && npm run update-types"
   }
 }
