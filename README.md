@@ -23,7 +23,7 @@ npm install --save @polymer/font-roboto
     </script>
   </head>
   <style>
-    body: {
+    body {
       font-family: Roboto;
     }
   </style>
