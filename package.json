@@ -18,10 +18,13 @@
   "license": "BSD-3-Clause",
   "author": "The Polymer Authors",
   "scripts": {
-    "format": "webmat"
+    "format": "webmat",
+    "generate-types": "gen-typescript-declarations --deleteExisting --outDir .",
+    "prepack": "npm run generate-types"
   },
   "dependencies": {},
   "devDependencies": {
-    "webmat": "^0.2.2"
+    "webmat": "^0.2.2",
+    "@polymer/gen-typescript-declarations": "^1.5.0"
   }
 }
