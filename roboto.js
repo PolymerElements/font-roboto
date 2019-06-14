@@ -11,6 +11,9 @@ found at http://polymer.github.io/PATENTS.txt
 
 export {}; // ensure this file can only be parsed as a module.
 
+/** @export */
+window.polymerSkipLoadingFontRoboto;
+
 // Give the user the choice to opt out of font loading.
 if (!window.polymerSkipLoadingFontRoboto) {
   const link = document.createElement('link');
